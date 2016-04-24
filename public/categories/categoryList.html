@@ -1,0 +1,9 @@
+<nav></nav>
+<h1>Categories</h1>
+
+<div ng-repeat="category in $ctrl.categories">
+    {{category.name}}
+</div>
+
+<input type="text" ng-model="$ctrl.newCategoryName" />
+<button class="btn btn-primary btn-small" ng-click="$ctrl.createNewCategory()">Create</button>
